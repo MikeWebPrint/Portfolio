@@ -25,6 +25,8 @@ body {
   background: var(--light);
   color: var(--dark);
   position: relative;
+  display: flex;
+  flex-direction: column;
 } 
 header, footer {
   width: 100%;
@@ -42,36 +44,62 @@ header {
   border-bottom: var(--accent-color) solid 6px;
 }
 .avatar{
+  border: solid 3px var(--dark);
   border-radius: 50%;
-  width: 8rem;
+  width: 10rem;
   margin: 0 2rem;
-  align-self: flex-start;
+  align-self: center;
+  /* box-shadow: var(--primary-tint) 1px 3px; */
 }
 footer {
   position: absolute;
   bottom: 0;
   text-align: center;
+  /* border-top: var(--secondary-color) solid 6px; */
 }
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
   font-weight: 300;
-  font-size: 1.2rem;
+  gap: 1rem;
 }
-nav ul li {
-  margin: 1rem;
+header ul {
+  justify-content: flex-end;
 }
 nav a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  transition: all .5s;
+  transition: text-decoration-color 0s;
+  font-weight: 500;
+}
+a {
+  transition: all .5s;
+  transition: text-decoration-color 0s;
+}
+.hero {
+  background-image: url(./images/concrete.jpg);
+  /* height: 15rem; */
+  height: 8vh;
+  min-height: 5rem;
+  background-position:center;
+  background-size: cover;
 }
 main {
   margin: 0 auto;
   max-width: 1200px;
-  padding: .5rem;
-  min-height: 100%;
-
+  padding: 1rem;
+  height: 100%;
+  flex: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .75em;
@@ -117,6 +145,7 @@ section.portfolio .card-row {
   border: solid var(--dark) 3px;
   border-radius: 5px;
   flex: 50% 0 0;
+  height: 20vh;
 }
 .card:first-child {
   flex-basis: 100%;
@@ -131,7 +160,7 @@ section.portfolio .card-row {
   }
   nav li {
     margin: .25rem;
-    font-size: 90%;
+    /* font-size: 90%; */
   }
 @media screen and (min-width: 1200px) {
   header {
@@ -139,4 +168,15 @@ section.portfolio .card-row {
     margin: 0 auto;
   }
 }
+}
+
+/* Portfolio cards */
+.card-img {
+  height: 150px;
+}
+#Horiseon {
+  background-image: url(./images/Horiseon-SEO-Services-Home.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
