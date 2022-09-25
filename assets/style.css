@@ -166,7 +166,7 @@ section.portfolio .card-row {
   border: solid var(--primary-tint3) 1px;
   border-radius: 2px;
   flex: 1 0 40%;
-  height: 20vh;
+  height: 30vh;
   background-color: var(--primary);
   background-position: top center;
   background-size: cover;
@@ -203,7 +203,7 @@ section.portfolio .card-row {
   content: attr(caption);
   position: relative;
   display: inline-block;
-  top: 12vh;
+  top: 19vh;
   left: -10px;
   background: var(--accent-color);
   padding: .5rem 1rem;
@@ -261,10 +261,10 @@ section.portfolio .card-row {
     max-width: 100%;
   }
   .card:first-child {
-    height: 30vh;
+    height: 35vh;
   }
   .card:first-child .card-caption {
-    top: 22vh;
+    top: 25vh;
   }
 }
 @media screen and (min-width: 1200px) {
