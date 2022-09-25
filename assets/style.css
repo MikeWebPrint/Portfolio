@@ -12,18 +12,21 @@
   --light: var(--primary-tint7);
   --dark: var(--primary-tint5);
   --white: #e7f0f1;
-  --gray: #616161;
+  --gray: #464646;
+  --light-gray: #bababa;
 }
 html {
   /* height: 100%; */
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 body {
   min-height: 100%;
   line-height: 1.375;
   font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 400;
-  background: var(--light);
+  /* background: var(--light); */
+  background: var(--primary-tint7);
   color: var(--dark);
   position: relative;
   display: flex;
@@ -39,11 +42,15 @@ header, footer {
 }
 header {
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 1rem;
   text-align: right;
   border-bottom: var(--accent-color) solid 6px;
+}
+header h1 {
+  font-size: 1.5rem;
 }
 .avatar{
   border: solid 3px var(--dark);
@@ -155,9 +162,9 @@ section.portfolio .card-row {
   gap: 1.5rem;
 }
 .card {
-  border: solid var(--gray) 1px;
-  border-radius: 5px;
-  flex: 40% 1 0;
+  border: solid var(--light-gray) 1px;
+  border-radius: 2px;
+  flex: 1 0 40%;
   height: 20vh;
   background-color: var(--primary);
   background-position: top center;
@@ -168,12 +175,12 @@ section.portfolio .card-row {
 .card::before {
   content: " ";
   background-color: var(--dark);
-  opacity: .7;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: inline-block;
   top: 0;
   left: 0;
@@ -185,9 +192,7 @@ right: 0;
   transition: all .2s linear;
 }
 .card:first-child {
-  /* max-width: 100%; */
   flex-basis: 100%;
-  /* flex-shrink: 0; */
 }
 .card:nth-child(n+2) {
   max-width: 50%;
@@ -205,11 +210,13 @@ right: 0;
   z-index: 15;
   font-weight: 600;
   font-size: 110%;
-}
-.card:hover, .card:active, .card:focus {
   box-shadow: var(--gray) 3px 3px 10px;
 }
-@media screen and (max-width: 625px) {
+.card:hover, .card:active, .card:focus {
+  box-shadow: var(--light-gray) 3px 3px 10px;
+}
+
+@media screen and (max-width: 700px) {
   header, footer {
     padding: 1rem;
   }
@@ -223,13 +230,20 @@ right: 0;
   section.portfolio h3 {
     flex: 100% 0 0;
   }
+  .card {
+    flex-basis: 100% 1 0;
+  }
+  .card:nth-child(n+2) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   header {
-    width: 1200px;
     margin: 0 auto;
   }
 }
-}
+
 
 /* Portfolio cards */
 #Horiseon {
