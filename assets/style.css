@@ -237,6 +237,11 @@ section.portfolio .card-row {
     flex-basis: 100%;
     max-width: 100%;
   }
+  .card:first-child {
+    height: 30vh;
+  }
+  .card:first-child .card-caption {
+    top: 22vh;
 }
 @media screen and (min-width: 1200px) {
   header {
