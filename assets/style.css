@@ -164,7 +164,6 @@ section.portfolio .card-row {
 .card {
   border: solid var(--light-gray) 1px;
   border: solid var(--primary-tint3) 1px;
-
   border-radius: 2px;
   flex: 1 0 40%;
   height: 20vh;
@@ -215,41 +214,6 @@ section.portfolio .card-row {
 .card:hover, .card:active, .card:focus {
   box-shadow: var(--light-gray) 3px 3px 10px;
 }
-
-@media screen and (max-width: 700px) {
-  header, footer {
-    padding: 1rem;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  nav li {
-    margin: .25rem;
-  }
-  section.portfolio h3 {
-    flex: 100% 0 0;
-  }
-  .card {
-    flex-basis: 100% 1 0;
-  }
-  .card:nth-child(n+2) {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-  .card:first-child {
-    height: 30vh;
-  }
-  .card:first-child .card-caption {
-    top: 22vh;
-}
-@media screen and (min-width: 1200px) {
-  header {
-    margin: 0 auto;
-  }
-}
-
-
 /* Portfolio cards */
 #Horiseon {
   background-image: url("./images/Horiseon-SEO-Services-Home.png");
@@ -266,3 +230,47 @@ section.portfolio .card-row {
 #warehouse {
   background-image: url('./images/warehouse.png');
 }
+#placeholder1 {
+  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+}
+#placeholder2 {
+  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+}
+#placeholder3 {
+  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+}
+@media screen and (max-width: 700px) {
+  header, footer {
+    padding: 1rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    margin: .25rem;
+  }
+  section.portfolio h3 {
+    flex: 100% 0 0;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .card:nth-child(n+2) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .card:first-child {
+    height: 30vh;
+  }
+  .card:first-child .card-caption {
+    top: 22vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    margin: 0 auto;
+  }
+}
+
+
