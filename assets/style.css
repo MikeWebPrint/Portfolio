@@ -252,17 +252,17 @@ section.portfolio .card-row {
 
 /* Portfolio cards */
 #Horiseon {
-  background-image: url(./assets/images/Horiseon-SEO-Services-Home.png);
+  background-image: url("./images/Horiseon-SEO-Services-Home.png");
 }
 #cbd {
-  background-image: url(./assets/images/QSCBD-Home.png);
+  background-image: url("./images/QSCBD-Home.png");
 }
 #acup {
-  background-image: url(./assets/images/acupuncture-Home.png);
+  background-image: url('./images/acupuncture-Home.png');
 }
 #temo {
-  background-image: url(./assets/images/temo.png);
+  background-image: url('./images/temo.png');
 }
 #warehouse {
-  background-image: url(./assets/images/warehouse.png);
+  background-image: url('./images/warehouse.png');
 }
