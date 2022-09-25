@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
 } 
+
 header, footer {
   width: 100%;
   background-color: rgb(97, 97, 97);
@@ -52,7 +53,7 @@ header {
   /* box-shadow: var(--primary-tint) 1px 3px; */
 }
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   text-align: center;
   /* border-top: var(--secondary-color) solid 6px; */
@@ -82,13 +83,13 @@ a:hover, a:active, a:focus {
   transition: text-decoration-color 0s;
   font-weight: 500;
 }
+
 a {
   transition: all .5s;
   transition: text-decoration-color 0s;
 }
 .hero {
   background-image: url(./images/concrete.jpg);
-  /* height: 15rem; */
   height: 8vh;
   min-height: 5rem;
   background-position:center;
@@ -160,7 +161,6 @@ section.portfolio .card-row {
   }
   nav li {
     margin: .25rem;
-    /* font-size: 90%; */
   }
 @media screen and (min-width: 1200px) {
   header {
