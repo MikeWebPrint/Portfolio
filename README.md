@@ -14,14 +14,13 @@ I enjoyed making decisions on hover behavior and colors.  I found it frustrating
 
 ## Installation
 
-At this point, the project is a static HTML document, and there is no need for any installation to visit the page, just a link.
+At this point, the project is a static HTML document, and there is no need for any installation to visit the page. You can  [view my portfolio here](https://mikewebprint.github.io/Portfolio/).
 
 ## Usage
 
 I've included a screenshot of how this page is expected to display on desktop, see below:
 
-md
-    ![alt text](./assets/images/screenshot.png)
+![alt text](./assets/images/screenshot.png)
 
 I decided that on smaller width displays, the card layout should collapse to all one column at full width.
 
