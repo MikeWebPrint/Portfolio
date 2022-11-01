@@ -252,6 +252,9 @@ section.portfolio .card-row {
 #placeholder3 {
   background-image: url("./images/Horiseon-SEO-Services-Home.png");
 }
+#filmfindr {
+  background-image: url("./images/FilmFindrapp.jpg")
+}
 /* I created this page desktop-first, but responsive, and this media query applies different styles to certain elements to make the layout look good at smaller screen widths. */
 @media screen and (max-width: 700px) {
   /* header and nav changes flex direction and collapses to column */
