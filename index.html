@@ -125,9 +125,12 @@
     </section>
   </main>
   <footer>
-    &copy; 2022 Mike Johnson
+    &copy; <span id='currentYear'></span> Mike Johnson
   </footer>
-
+<script>
+  const currentYear = new Date().getFullYear()
+  document.getElementById('currentYear').textContent = currentYear
+</script>
 </body>
 
 </html>
