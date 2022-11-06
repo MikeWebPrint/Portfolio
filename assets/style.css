@@ -229,31 +229,55 @@ section.portfolio .card-row {
 }
 /* Portfolio cards background images*/
 #Horiseon {
-  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+  background-image: url("./images/webdev/Horiseon-SEO-Services-Home.png");
 }
 #cbd {
-  background-image: url("./images/QSCBD-Home.png");
+  background-image: url("./images/webdev/QSCBD-Home.png");
 }
 #acup {
-  background-image: url('./images/acupuncture-Home.png');
+  background-image: url('./images/webdev/acupuncture-Home.png');
 }
 #temo {
-  background-image: url('./images/temo.png');
+  background-image: url('./images/webdev/temo.png');
 }
 #warehouse {
-  background-image: url('./images/warehouse.png');
+  background-image: url('./images/webdev/warehouse.png');
 }
-#placeholder1 {
-  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+#SalemTour {
+  background-image: url("./images/print-graphics/Salem-brochure.jpg");
 }
-#placeholder2 {
-  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+#SalemHeritage {
+  background-image: url("./images/print-graphics/Salem-Heritage-Day-broch.jpg");
 }
-#placeholder3 {
-  background-image: url("./images/Horiseon-SEO-Services-Home.png");
+#starbrite {
+  background-image: url("./images/print-graphics/Def-SLS22-sponsorbanners-starbrite.jpg");
+}
+#tohatsu {
+  background-image: url("./images/print-graphics/Def-SLS22-sponsorbanners-tohatsu.jpg");
+}
+#boat-show-power {
+  background-image: url("./images/web-email-graphics/boat-show-power.jpg");
+}
+#boat-show-sail {
+  background-image: url("./images/web-email-graphics/boat-show-sail.jpg");
+}
+#rotators {
+  background-image: url("./images/web-email-graphics/cut-goods_22A.jpg");
+}
+/* #elec-deals {
+  background-image: url("./images/web-email-graphics/elec-deals.jpg");
+} */
+#MemDay {
+  background-image: url("./images/web-email-graphics/Mem-Day-Sale-cover.jpg");
 }
 #filmfindr {
-  background-image: url("./images/FilmFindrapp.jpg")
+  background-image: url("./images/webdev/FilmFindrapp.jpg")
+}
+#jsquiz {
+  background-image: url("./images/webdev/jsquiz.png");
+}
+#weather-app {
+  background-image: url("./images/webdev/weather-app.png");
 }
 /* I created this page desktop-first, but responsive, and this media query applies different styles to certain elements to make the layout look good at smaller screen widths. */
 @media screen and (max-width: 700px) {
